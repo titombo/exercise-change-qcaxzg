@@ -1,0 +1,15 @@
+<h3>Helper links</h3>
+<mat-divider></mat-divider>
+<mat-nav-list style='padding-left:20px;'>
+	<a mat-list-item [href]="link.linkAddress" 
+    class="example-user-input" 
+    matTooltip="{{link.linkName}} - {{link.linkDescription}}"
+    matTooltipClass="tooltip"
+		matTooltipPosition="below" 
+    color="primary" 
+    matBadge="{{i+1}}" 
+    matBadgePosition="before" matBadgeColor="accent"
+		target="_blank" 
+    *ngFor="let link of complexLinks; let i = index"> {{ link.linkName }} </a>
+</mat-nav-list>
+<mat-divider></mat-divider>
